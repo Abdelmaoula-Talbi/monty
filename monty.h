@@ -42,7 +42,7 @@ typedef struct instruction_s
 void execute_file(char *filename);
 char *read_line(void);
 char **split_line(char *line);
-void (*get_opcode_func(char *opcode)(unsigned int n);
+void (*get_opcode_func(char *opcode)(unsigned int n));
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
