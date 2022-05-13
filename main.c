@@ -12,7 +12,7 @@ int main(int argc, char *argv)
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: monty %s\n", argv[1]);
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	execute_file(argv[1]);
 	return (0);

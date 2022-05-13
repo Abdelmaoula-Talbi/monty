@@ -18,7 +18,7 @@ char **split_line(char *line)
 	}
 
 	token = strtok(line, " ");
-	index = 0:
+	index = 0;
 	while (token != NULL)
 	{
 		token = strtok(NULL, " ");
