@@ -1,4 +1,4 @@
-include "monty.h"
+#include "monty.h"
 
 /**
  * execute_file - open a file given by user, read it and execute it..
@@ -15,7 +15,7 @@ void execute_file(char *filename)
 	if (filename == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", filename);
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	fd_o = open(filename, O_RDONLY);
 	if (fd_o == -1)
