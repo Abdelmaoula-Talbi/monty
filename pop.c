@@ -3,6 +3,7 @@
 /**
  * pop - deletes the top element of the stack.
  * @stack: pointer to the pointer to the top element of the stack.
+ * @line_number: line number of the instruction.
  * Return: pointer to the new top element of the stack.
  */
 stack_t *pop(stack_t **stack, unsigned int line_number)

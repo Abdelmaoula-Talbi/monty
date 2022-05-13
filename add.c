@@ -3,6 +3,7 @@
 /**
  * add - adds the top two elements of the stack.
  * @stack: pointer to pointer to the head of the stack.
+ * @line_number: line number of the instruction into the file.
  * Return: the address of the second top element.
  */
 stack_t *add(stack_t **stack, unsigned int line_number)

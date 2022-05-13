@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * get_opcode_func - select the right function to perform
+ * get_op_func - select the right function to perform
  * the instruction asked by user.
  * @opcode: the opcode passed by user.
- * @n: intger passed as argument.
  * Return: pointer to the function that corresponds to the instruction
  * given by user.
  */
-void (*get_opcode_func(char *opcode))(stack_t **stack, unsigned int line_number)
+void (*get_op_func(char *opcode))(stack_t **stack, unsigned int line_number)
 {
 	instruction_t insts[] = {
 		{"push", push_elem},

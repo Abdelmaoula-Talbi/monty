@@ -7,7 +7,7 @@
  */
 void execute_file(char *filename)
 {
-	int fd_o, i;
+	int fd_o, line_number;
 	char *line;
 	char **tokens;
 	stack_t **stack;
@@ -23,14 +23,14 @@ void execute_file(char *filename)
 		fprintf(stderr, "Error: Cant't open file %s\n", filename);
 		exit(EXIT_FAILURE);
 	}
-	i = 0;
+	line_number = 0;
 	while (!eof)
 	{
 		line = read_line();
 		tokens = split_line(line);
-		get_opcode_func(token[0])(stack, i);
+		get_opc_func(token[0])(stack, line_number);
 		free(line);
 		free(tokens);
-		i++;
+		line_number++;
 	}
 }
